@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinate_activity_inboundwhitelist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context="com.incresol.screenoutgps.views.InboundWhiteListSyncActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/activity_inboundwhitelist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/inbound_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Reload List" />
+
+            <LinearLayout
+                android:id="@+id/inbound_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inbound_refresh"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/inbound_user_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFF00"
+                    android:gravity="center_horizontal"
+                    android:text="User Phones"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textStyle="italic" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_inbound_usercalls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/inbound_linear_layout"
+                    android:layout_marginLeft="10dp"
+                    android:nestedScrollingEnabled="true"
+                    android:scrollbars="vertical" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"></FrameLayout>
+
+                <TextView
+                    android:id="@+id/inbound_company_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFF00"
+                    android:gravity="center_horizontal"
+                    android:text="Company Phones"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textStyle="italic" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_inbound_companycalls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/inbound_linear_layout"
+                    android:layout_marginLeft="10dp"
+                    android:nestedScrollingEnabled="true"
+                    android:scrollbars="vertical" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"></FrameLayout>
+
+                <TextView
+                    android:id="@+id/inbound_location_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFF00"
+                    android:gravity="center_horizontal"
+                    android:text="Location Phones"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textStyle="italic" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_inbound_locationcalls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/inbound_linear_layout"
+                    android:layout_marginLeft="10dp"
+                    android:scrollbars="vertical" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"></FrameLayout>
+
+                <TextView
+                    android:id="@+id/inbound_group_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFF00"
+                    android:gravity="center_horizontal"
+                    android:text="Group Phones"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textStyle="italic" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_inbound_groupcalls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/inbound_linear_layout"
+                    android:layout_marginLeft="10dp"
+                    android:scrollbars="vertical" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "604516783345",
+    "firebase_url": "https://urbanairship-api.firebaseio.com",
+    "project_id": "urbanairship-api",
+    "storage_bucket": "urbanairship-api.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604516783345:android:07655312c58199c4",
+        "android_client_info": {
+          "package_name": "com.incresol.screenoutgps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604516783345-1hbv6i9nnk43bdqguvhrbn2kr2usjg6k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCssPfvAYqP12JTSgacAW31X5ClKJRMUCY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
